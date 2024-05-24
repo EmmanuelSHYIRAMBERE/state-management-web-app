@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #060303;
+}
+
+.box {
+  width: 600px;
+  background-color: #c7c7c7;
+  justify-content: center;
+  border-radius: 7px;
+  padding: 25px 50px;
+  margin: 900px auto 10px;
+}

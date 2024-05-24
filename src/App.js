@@ -1,6 +1,12 @@
 import { useState } from "react";
+
 import Button from "./Button";
 import Message from "./Message";
+import TipCalculator from "./Components/TipCalculator/TipCalculator";
+import EatAndSplit from "./Components/EatAndSplit/EatAndSplit";
+import TextExpander from "./Components/TextExpander/TextExpander";
+import Tabbed from "./Components/HowReactWorks/Tabbed";
+import CurrencyConverter from "./Components/CurrencyConverter/CurrencyConverter";
 
 const messages = [
   "Learn React ⚛️",
@@ -11,7 +17,30 @@ const messages = [
 export default function App() {
   return (
     <>
+      <TipCalculator />
+      <TipCalculator />
+
+      <CurrencyConverter />
+
+      <TextExpander
+        collapsedNumWords={20}
+        expandButtonText="Show text"
+        collapseButtonText="Collapse text"
+        buttonColor="#ff6622"
+        expanded={true}
+        className="box"
+      >
+        Space missions have given us incredible insights into our universe and
+        have inspired future generations to keep reaching for the stars. Space
+        travel is a pretty cool thing to think about. Who knows what we'll
+        discover next!
+      </TextExpander>
+
+      <Tabbed />
+
       <Steps />
+
+      <EatAndSplit />
     </>
   );
 }
